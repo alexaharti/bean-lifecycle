@@ -15,11 +15,10 @@ public class DemoController {
     //constructor
     @Autowired
     public DemoController(
-            @Qualifier("frenchChef") Chef theChef,
-            @Qualifier("frenchChef") Chef theSecondChef) {
+            @Qualifier("frenchChef") Chef theChef) {
         System.out.println("In constructor: " + getClass().getSimpleName());
             myChef = theChef;
-            secondChef = theSecondChef;
+
        }
 
     //@Autowired
